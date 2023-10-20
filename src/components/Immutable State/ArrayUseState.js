@@ -13,7 +13,7 @@ export const ArrayUseState = () => {
         newPersons.push('Sandoval')
         newPersons.push('Pedro')
         setPersons(newPersons)
-
+ 
     }
     console.log('ArrayUseState Render')
   return (
