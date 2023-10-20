@@ -1,18 +1,23 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 const initState = {
-    fname: 'Ayomide',
-    lname: 'Adeyemo'
+    fname: 'David',
+    lname: 'Scott'
 }
 
-const changeName = () => {
-    person.fname = 'John'
-    person.lname = 'Clark'
-    setPerson = (person)
-}
-
-export const objectUseState = () => {
+export const ObjectUseState = () => {
     const [person, setPerson] = useState(initState)
+    const changeName = () => {
+        // person.fname = 'John'
+        // person.lname = 'Doe'
+        // setPerson(person)
+        const newPerson = {...person}
+        newPerson.fname = 'Clark'
+        newPerson.lname = 'Kent'
+        setPerson(newPerson)
+    }
+
+    console.log('ObjectUseState render')
   return (
     <div>
         <button onClick={changeName}>{person.fname} {person.lname}</button>
