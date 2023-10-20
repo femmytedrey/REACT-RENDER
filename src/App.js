@@ -10,11 +10,12 @@ import { ChildOne } from './components/Optimization/ChildOne';
 import { GrandOne } from './components/Optimization/GrandOne';
 import { ParentTwo } from './components/Optimization/ParentTwo';
 import { ParentThree } from './components/Incorrect Optimizations/ParentThree';
+import { ParentFour } from './components/Incorrect Optimizations/ParentFour';
 
 function App() {
   return (
     <div className="App">
-      <ParentThree />
+      <ParentFour />
       {/* <Parent /> */}
       {/* <ArrayUseState /> */}
       {/* <ObjectUseState /> */}
